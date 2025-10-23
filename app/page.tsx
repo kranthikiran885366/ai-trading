@@ -53,13 +53,48 @@ export default function Home() {
           </Card>
         </div>
 
-        <div className="text-center">
+        <div className="text-center mb-12">
           <p className="text-gray-400 mb-4">
             Status: <span className="text-green-400">Platform Ready</span>
           </p>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 mb-6">
             Configure your API keys in the environment settings to start trading
           </p>
+          <div className="flex justify-center space-x-4">
+            <Link href="/dashboard">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                Go to Dashboard
+              </Button>
+            </Link>
+            <Link href="/settings">
+              <Button variant="outline" className="border-gray-600 bg-gray-700 hover:bg-gray-600 text-white">
+                Configure Settings
+              </Button>
+            </Link>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <Link href="/dashboard" className="p-6 bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-700 transition-colors text-center">
+            <div className="text-3xl mb-2">📊</div>
+            <div className="font-semibold text-white">Dashboard</div>
+            <div className="text-sm text-gray-400 mt-1">Real-time monitoring</div>
+          </Link>
+          <Link href="/trading" className="p-6 bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-700 transition-colors text-center">
+            <div className="text-3xl mb-2">💹</div>
+            <div className="font-semibold text-white">Trading</div>
+            <div className="text-sm text-gray-400 mt-1">Execute trades</div>
+          </Link>
+          <Link href="/portfolio" className="p-6 bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-700 transition-colors text-center">
+            <div className="text-3xl mb-2">💼</div>
+            <div className="font-semibold text-white">Portfolio</div>
+            <div className="text-sm text-gray-400 mt-1">Track positions</div>
+          </Link>
+          <Link href="/settings" className="p-6 bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-700 transition-colors text-center">
+            <div className="text-3xl mb-2">⚙️</div>
+            <div className="font-semibold text-white">Settings</div>
+            <div className="text-sm text-gray-400 mt-1">Configure bot</div>
+          </Link>
         </div>
       </div>
     </div>
