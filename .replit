@@ -37,3 +37,8 @@ externalPort = 80
 [[ports]]
 localPort = 37735
 externalPort = 3000
+
+[deployment]
+deploymentTarget = "autoscale"
+run = ["pnpm"]
+build = ["pnpm", "run", "build"]
