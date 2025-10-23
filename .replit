@@ -1,0 +1,7 @@
+modules = ["python-3.12", "nodejs-20", "bash", "web"]
+[agent]
+expertMode = true
+
+[nix]
+channel = "stable-25_05"
+packages = ["cairo", "cargo", "ffmpeg-full", "freetype", "ghostscript", "glibcLocales", "gobject-introspection", "gtk3", "libiconv", "libjpeg_turbo", "libpng", "libxcrypt", "libyaml", "openssl", "pkg-config", "postgresql", "qhull", "rustc", "tcl", "tk", "which", "xsimd"]
